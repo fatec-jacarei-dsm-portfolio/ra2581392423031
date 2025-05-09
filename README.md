@@ -1,2 +1,4 @@
-# ra2581392423031
-Repositório do aluno GABRIEL RENATO FROIS DE OLIVEIRA.
+# Portfólio de Projetos - Fatec Jacareí
+### Aluno: Gabriel R. Frois de Oliveira
+### Curso: Desenvolvimento de Software Multiplataforma
+### Turma: 2o Semestre de 2024
