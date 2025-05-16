@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Frois</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./src/img/g.png">
+    <link rel="stylesheet" type="text/css" href="src/styles.css"> 
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <p class="hello-world">
+            <span class="typed-text"></span><span class="cursor">|</span>
+        </p>
+        <p class="nome-titulo">Gabriel Frois</p>
+        <p class="subtitulo">Desenvolvedor Front-End</p>
+        <a href="./src/assets/cv-gabriel-frois.pdf" target="_blank" class="btn-download-cv">
+            <button class="botao-cv">Download CV</button> 
+        </a>
+
+
+    </section>
+
+    <section id="sobre" class="sobre">
+        <p class="titulo">Sobre Mim</p>
+        <div class="linha-decorativa"></div>
+        <p class="sobre-texto">Desenvolvedor Front-End iniciante com experiências em HTML5, CSS3, JavaScript, TypeScript e React.js.
+            Sempre interessado pela área de tecnologia, atualmente cursando ensino superior em Desenvolvimento de Software Multiplataforma na FATEC, onde atuei como monitor da disciplina de Algoritmos e Lógica de Programação.</p>
+    </section>
+    
+    <section id="habilidades" class="habilidades">
+        <p class="titulo">Habilidades</p>
+        <div class="linha-decorativa"></div>
+        <div class="skills-grid">
+            <div class="skill-card" data-name="HTML" data-level="2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" alt="HTML">
+            </div>
+            <div class="skill-card" data-name="CSS" data-level="2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" alt="CSS">
+            </div>
+            <div class="skill-card" data-name="JavaScript" data-level="2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript">
+            </div>
+            <div class="skill-card" data-name="TypeScript" data-level="1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="TypeScript">
+            </div>
+            <div class="skill-card" data-name="React" data-level="1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React">
+            </div>
+            <div class="skill-card" data-name="Node.js" data-level="1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" alt="Node.js">
+            </div>
+            <div class="skill-card" data-name="PostgreSQL" data-level="2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" alt="PostgreSQL">
+            </div>
+            <div class="skill-card" data-name="UML" data-level="1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg" alt="UML">
+            </div>
+            <div class="skill-card" data-name="Figma" data-level="1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
+            </div>
+            <div class="skill-card" data-name="GitHub" data-level="2">
+                <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png" alt="GitHub">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projetos" class="projetos">
+        <p class="titulo">Projetos</p>
+        <div class="linha-decorativa"></div>
+
+        <p class="tipo-projeto">Projetos Acadêmicos</p>
+        <div class="linha-decorativa-m"></div>
+        <div id="projetos-academicos-container"></div>
+
+        <p class="tipo-projeto">Projetos Pessoais</p>
+        <div class="linha-decorativa-m"></div>
+        <div id="projetos-pessoais-container"></div>
+    </section>
+    
+
+    <div id="imagemModal" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar">&times;</span>
+            <img id="imgModal" class="imagem-modal" src="" alt="Imagem do Projeto">
+        </div>
+    </div>
+
+
+    <section id="contato" class="contato">
+        <p class="titulo">Contato</p>
+        <div class="linha-decorativa"></div>
+        <div class="botoes-container">
+            <a class="botao-contato" href="mailto:frois.ga@gmail.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="E-mail" />
+                <span>frois.ga@gmail.com</span>
+            </a>
+            <a class="botao-contato" href="https://www.linkedin.com/in/gabriel-frois/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" />
+                <span>Gabriel R. Frois de Oliveira</span>
+            </a>
+            <a class="botao-contato" href="https://github.com/GabrielFrois" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
+                <span>@GabrielFrois</span>
+            </a>
+        </div>
+    </section>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
