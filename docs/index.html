@@ -1,129 +1,538 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Frois</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./src/img/g.png">
-    <link rel="stylesheet" type="text/css" href="src/styles.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Frois</title>
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Portfólio de Gabriel Frois, Desenvolvedor Front-End especializado em HTML, CSS, JavaScript, TypeScript e React." />
+  <meta name="keywords"
+    content="desenvolvedor front-end, portfólio, HTML, CSS, JavaScript, TypeScript, React, São José dos Campos" />
+  <meta name="author" content="Gabriel Frois" />
+  <link rel="canonical" href="https://gabrielfrois.github.io/dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gabriel Frois — Desenvolvedor Front-End" />
+  <meta property="og:description"
+    content="Portfólio de Gabriel Frois, Desenvolvedor Front-End com projetos em React, TypeScript, Node.js e mais." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gabrielfrois.github.io/dev/" />
+  <meta property="og:image" content="https://gabrielfrois.github.io/dev/src/img/og-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./src/img/g.png" />
+  <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
 </head>
+
 <body>
-    <header>
-        <div class="cabecalho">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+
+  <!-- Barra de progresso de leitura -->
+  <div id="reading-progress"></div>
+
+  <header>
+    <div class="container" id="nav-container">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+          aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav ms-auto text-end">
+            <a class="nav-item nav-link" href="#home">Home</a>
+            <a class="nav-item nav-link" href="#about">Sobre</a>
+            <a class="nav-item nav-link" href="#skills">Habilidades</a>
+            <a class="nav-item nav-link" href="#projects">Projetos</a>
+            <a class="nav-item nav-link" href="#contact">Contato</a>
+          </div>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <section id="home" class="home">
-        <p class="hello-world">
-            <span class="typed-text"></span><span class="cursor">|</span>
-        </p>
-        <p class="nome-titulo">Gabriel Frois</p>
-        <p class="subtitulo">Desenvolvedor Front-End</p>
-        <a href="./src/assets/cv-gabriel-frois.pdf" target="_blank" class="btn-download-cv">
-            <button class="botao-cv">Download CV</button> 
-        </a>
+  <main>
 
-
-    </section>
-
-    <section id="sobre" class="sobre">
-        <p class="titulo">Sobre Mim</p>
-        <div class="linha-decorativa"></div>
-        <p class="sobre-texto">Desenvolvedor Front-End iniciante com experiências em HTML5, CSS3, JavaScript, TypeScript e React.js.
-            Sempre interessado pela área de tecnologia, atualmente cursando ensino superior em Desenvolvimento de Software Multiplataforma na FATEC, onde atuei como monitor da disciplina de Algoritmos e Lógica de Programação.</p>
-    </section>
-    
-    <section id="habilidades" class="habilidades">
-        <p class="titulo">Habilidades</p>
-        <div class="linha-decorativa"></div>
-        <div class="skills-grid">
-            <div class="skill-card" data-name="HTML" data-level="2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" alt="HTML">
-            </div>
-            <div class="skill-card" data-name="CSS" data-level="2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" alt="CSS">
-            </div>
-            <div class="skill-card" data-name="JavaScript" data-level="2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript">
-            </div>
-            <div class="skill-card" data-name="TypeScript" data-level="1">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="TypeScript">
-            </div>
-            <div class="skill-card" data-name="React" data-level="1">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React">
-            </div>
-            <div class="skill-card" data-name="Node.js" data-level="1">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" alt="Node.js">
-            </div>
-            <div class="skill-card" data-name="PostgreSQL" data-level="2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" alt="PostgreSQL">
-            </div>
-            <div class="skill-card" data-name="UML" data-level="1">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg" alt="UML">
-            </div>
-            <div class="skill-card" data-name="Figma" data-level="1">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
-            </div>
-            <div class="skill-card" data-name="GitHub" data-level="2">
-                <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png" alt="GitHub">
-            </div>
+    <!-- Home -->
+    <div id="home" class="d-flex align-items-center min-vh-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center text-md-start">
+            <p class="hello-world">
+              <span class="typed-text"></span>
+              <span class="cursor">|</span>
+            </p>
+            <h1>Gabriel Frois</h1>
+            <h2>Desenvolvedor Front-End</h2>
+            <a href="#about" class="btn-know-more mt-3">
+              <button class="btn btn-outline-info btn-lg">Explorar portfólio</button>
+            </a>
+          </div>
         </div>
-    </section>
-
-
-    <section id="projetos" class="projetos">
-        <p class="titulo">Projetos</p>
-        <div class="linha-decorativa"></div>
-
-        <p class="tipo-projeto">Projetos Acadêmicos</p>
-        <div class="linha-decorativa-m"></div>
-        <div id="projetos-academicos-container"></div>
-
-        <p class="tipo-projeto">Projetos Pessoais</p>
-        <div class="linha-decorativa-m"></div>
-        <div id="projetos-pessoais-container"></div>
-    </section>
-    
-
-    <div id="imagemModal" class="modal">
-        <div class="modal-conteudo">
-            <span class="fechar">&times;</span>
-            <img id="imgModal" class="imagem-modal" src="" alt="Imagem do Projeto">
-        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
     </div>
 
-
-    <section id="contato" class="contato">
-        <p class="titulo">Contato</p>
-        <div class="linha-decorativa"></div>
-        <div class="botoes-container">
-            <a class="botao-contato" href="mailto:frois.ga@gmail.com" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="E-mail" />
-                <span>frois.ga@gmail.com</span>
-            </a>
-            <a class="botao-contato" href="https://www.linkedin.com/in/gabriel-frois/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" />
-                <span>Gabriel R. Frois de Oliveira</span>
-            </a>
-            <a class="botao-contato" href="https://github.com/GabrielFrois" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
-                <span>@GabrielFrois</span>
-            </a>
+    <!-- Sobre -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="main-title reveal">Sobre Mim</h2>
+          </div>
+          <div class="col-12 about-text reveal">
+            <p>Desenvolvedor Front-End iniciante com experiências em HTML5, CSS3, JavaScript, TypeScript e React.js.</p>
+            <p>Sempre interessado pela área de tecnologia, atualmente cursando ensino superior em Desenvolvimento de
+              Software Multiplataforma na FATEC, onde atuei como monitor da disciplina de Algoritmos e Lógica de
+              Programação durante meu segundo e terceiro períodos.</p>
+          </div>
         </div>
-    </section>
 
-    <script src="src/script.js"></script>
+        <!-- Formação -->
+        <div class="about-section reveal">
+          <h3 class="about-section-title"><span class="about-section-icon">🎓</span> Formação</h3>
+          <div class="about-timeline">
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <span class="timeline-period">Agosto de 2024 — Presente</span>
+                <h4>Desenvolvimento de Software Multiplataforma</h4>
+                <span class="timeline-place">FATEC - Jacareí · 4º Período</span>
+                <p>Curso superior focado no desenvolvimento de sistemas para múltiplas plataformas. A formação integra engenharia de software, segurança da informação e inteligência artificial, capacitando para a gestão de projetos ágeis e a entrega de soluções tecnológicas completas e seguras.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiências -->
+        <div class="about-section reveal">
+          <h3 class="about-section-title"><span class="about-section-icon">💼</span> Experiências</h3>
+          <div class="about-timeline">
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="timeline-content">
+                <span class="timeline-period">Março de 2025 — Junho de 2025 · Agosto de 2025 — Dezembro de 2025</span>
+                <h4>Monitor de Algoritmos e Lógica de Programação</h4>
+                <span class="timeline-place">FATEC - Jacareí</span>
+                <p>Atuação como monitor da disciplina de Algoritmos e Lógica de Programação, com foco em JavaScript e Python.<br>Minhas responsabilidades incluíram apoiar o entendimento dos principais conceitos abordados em sala de aula, como variáveis, estruturas de decisão, estruturas de repetição, arrays e funções, além de esclarecer dúvidas e auxiliar na resolução de exercícios práticos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Idiomas -->
+        <div class="about-section reveal">
+          <h3 class="about-section-title"><span class="about-section-icon">🌐</span> Idiomas</h3>
+          <div class="languages-grid">
+            <div class="language-card">
+              <span class="language-name">Inglês</span>
+              <span class="language-level">Básico / Leitura técnica</span>
+              <div class="language-bar"><div class="language-bar-fill" style="width: 35%"></div></div>
+            </div>
+            <!--
+            <div class="language-card">
+              <span class="language-name">Espanhol</span>
+              <span class="language-level">Básico</span>
+              <div class="language-bar"><div class="language-bar-fill" style="width: 20%"></div></div>
+            </div>
+            -->
+          </div>
+        </div>
+
+        <!-- Certificados -->
+        <div class="about-section reveal">
+          <h3 class="about-section-title"><span class="about-section-icon">📜</span> Certificados</h3>
+          <div class="certs-grid">
+            <a class="cert-card" href="https://badge.cps.sp.gov.br//view.aspx?72e94ba2-1632-498f-b3ca-993f51c8eaa8" target="_blank">
+              <span class="cert-title">Front-End Básico</span>
+              <span class="cert-issuer">CPS</span>
+            </a>
+            <a class="cert-card" href="https://siga.cps.sp.gov.br/cartorio/autenticador.aspx?c5eb3844-261c-48ae-ae20-ec43d284487e" target="_blank">
+              <span class="cert-title">Desenvolvedor Front-End</span>
+              <span class="cert-issuer">CPS</span>
+            </a>
+            <a class="cert-card" href="https://www.linkedin.com/in/gabriel-frois/overlay/Certifications/415234367/treasury/?profileId=ACoAAC7Ozr4BYxK8p9Ox735IDE6rOnvUztQTv1c" target="_blank">
+              <span class="cert-title">NDG Linux Unhatched</span>
+              <span class="cert-issuer">Cisco Networking Academy</span>
+            </a>
+            <a class="cert-card" href="https://badge.cps.sp.gov.br//view.aspx?aad64246-0bed-442f-a31b-cbd7d4678b00" target="_blank">
+              <span class="cert-title">Design Patterns Básico</span>
+              <span class="cert-issuer">CPS</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Habilidades -->
+    <div id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="main-title reveal">Habilidades</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center gx-1 gy-3 reveal">
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="HTML" data-level="2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" alt="HTML" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="CSS" data-level="2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" alt="CSS" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="Bootstrap" data-level="1">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="JavaScript" data-level="2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="TypeScript" data-level="1">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="TypeScript" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="React" data-level="1">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="Node.js" data-level="1">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" alt="Node.js" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="PostgreSQL" data-level="2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" alt="PostgreSQL" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="MongoDB" data-level="1">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" alt="MongoDB" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="Figma" data-level="1">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="Git" data-level="1">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg" alt="Git" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-2 col-4 d-flex justify-content-center">
+            <div class="skill-card" data-name="GitHub" data-level="2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projetos -->
+    <div id="projects">
+      <div class="container">
+        <h2 class="main-title reveal">Projetos</h2>
+
+        <div class="projects-filter reveal">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="academic">Acadêmicos</button>
+          <button class="filter-btn" data-filter="personal">Pessoais</button>
+        </div>
+
+        <!-- Grupo Acadêmicos -->
+        <div class="projects-group" id="group-academic">
+          <h3 class="sub-title reveal">Acadêmicos <span class="projects-count" id="count-academic"></span></h3>
+          <div class="projects-grid">
+
+            <div class="project-card reveal" data-category="academic" data-year="2024" data-title="Capy Scrum"
+              data-description="Desenvolvido o site de um curso interativo sobre a metodologia Scrum, cobrindo seus princípios, práticas e papel dos membros da equipe. O curso inclui materiais teóricos, atividades práticas e avaliações para garantir a compreensão dos participantes. Projeto desenvolvido em grupo para a ABP do primeiro semestre do curso Desenvolvimento de Software Multiplataforma na Fatec. Atuei ativamente na estruturação do projeto, focando na implementação do layout e as funcionalidades do site com HTML, CSS e JavaScript e também trabalhei na emissão de certificados para o fim do curso."
+              data-repo="https://github.com/Capydev-jac/Capydev---1DSM" data-link-label="Ver Repositório"
+              data-images='["./src/img/scrum-um.png","./src/img/scrum-dois.PNG"]'
+              data-badges='[{"label":"HTML","class":"badge-html"},{"label":"CSS","class":"badge-css"},{"label":"JavaScript","class":"badge-js"},{"label":"PostgreSQL","class":"badge-sql"}]'>
+              <div class="project-card-img-wrap">
+                <img src="./src/img/scrum-um.png" alt="Capy Scrum" class="project-card-img" loading="lazy" />
+                <div class="project-card-overlay"><span>Ver detalhes</span></div>
+                <div class="project-card-info">
+                  <span class="project-year">2024</span>
+                  <h4>Capy Scrum</h4>
+                  <div class="project-badges">
+                    <span class="badge badge-html">HTML</span>
+                    <span class="badge badge-css">CSS</span>
+                    <span class="badge badge-js">JavaScript</span>
+                    <span class="badge badge-sql">PostgreSQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal" data-category="academic" data-year="2025" data-title="Ignis"
+              data-description="O projeto Ignis é uma plataforma web com o objetivo de facilitar o acesso a informações sobre queimadas e incêndios florestais. O sistema utiliza dados públicos do Programa Queimadas – INPE para fornecer informações detalhadas sobre focos de calor, risco de fogo e áreas queimadas em diferentes regiões do Brasil. Atuei no desenvolvimento completo da estrutura frontend da plataforma usando React e TypeScript e trabalhei também na seção dos gráficos dinâmicos, conectando os filtros do frontend às consultas no banco de dados."
+              data-repo="https://github.com/Capydev-jac/Projeto-Ignis" data-link-label="Ver Repositório"
+              data-images='["./src/img/ignis-um.png","./src/img/ignis-dois.png"]'
+              data-badges='[{"label":"HTML","class":"badge-html"},{"label":"CSS","class":"badge-css"},{"label":"JavaScript","class":"badge-js"},{"label":"TypeScript","class":"badge-ts"},{"label":"Node.js","class":"badge-node"},{"label":"React","class":"badge-react"},{"label":"PostgreSQL","class":"badge-sql"}]'>
+              <div class="project-card-img-wrap">
+                <img src="./src/img/ignis-um.png" alt="Ignis" class="project-card-img" loading="lazy" />
+                <div class="project-card-overlay"><span>Ver detalhes</span></div>
+                <div class="project-card-info">
+                  <span class="project-year">2025</span>
+                  <h4>Ignis</h4>
+                  <div class="project-badges">
+                    <span class="badge badge-ts">TypeScript</span>
+                    <span class="badge badge-react">React</span>
+                    <span class="badge badge-node">Node.js</span>
+                    <span class="badge badge-sql">PostgreSQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal" data-category="academic" data-year="2025" data-title="Aetheris"
+              data-description="O projeto Aetheris é uma aplicação web desenvolvida para centralizar a visualização e comparação de dados geoespaciais do Brazil Data Cube (INPE). A plataforma permite que usuários selecionem áreas no mapa para consultar metadados e comparar visualmente séries temporais de variáveis como NDVI e temperatura de diferentes satélites. Neste projeto, desenvolvido no 3º semestre de Desenvolvimento de Software Multiplataforma na Fatec, atuei como Scrum Master. Além de trabalhar ativamente no desenvolvimento do frontend, fui responsável pela gestão ágil do projeto, monitorando o progresso das sprints para garantir a entrega de um produto funcional."
+              data-repo="https://github.com/Capydev-jac/Projeto-Aetheris" data-link-label="Ver Repositório"
+              data-images='["./src/img/aetheris-um.png","./src/img/aetheris-dois.png","./src/img/aetheris-tres.png","./src/img/aetheris-quatro.png"]'
+              data-badges='[{"label":"HTML","class":"badge-html"},{"label":"CSS","class":"badge-css"},{"label":"JavaScript","class":"badge-js"},{"label":"TypeScript","class":"badge-ts"},{"label":"Node.js","class":"badge-node"},{"label":"MongoDB","class":"badge-mongo"}]'>
+              <div class="project-card-img-wrap">
+                <img src="./src/img/aetheris-um.png" alt="Aetheris" class="project-card-img" loading="lazy" />
+                <div class="project-card-overlay"><span>Ver detalhes</span></div>
+                <div class="project-card-info">
+                  <span class="project-year">2025</span>
+                  <h4>Aetheris</h4>
+                  <div class="project-badges">
+                    <span class="badge badge-ts">TypeScript</span>
+                    <span class="badge badge-node">Node.js</span>
+                    <span class="badge badge-mongo">MongoDB</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Grupo Pessoais -->
+        <div class="projects-group projects-sub-spacing" id="group-personal">
+          <h3 class="sub-title reveal">Pessoais <span class="projects-count" id="count-personal"></span></h3>
+          <div class="projects-grid">
+
+            <div class="project-card reveal" data-category="personal" data-year="2025" data-title="Controle Financeiro"
+              data-description="O Financias é uma aplicação Full-Stack completa para gestão financeira pessoal e familiar. O sistema centraliza o controle de fluxo de caixa, gestão de orçamentos, acompanhamento de investimentos e relatórios detalhados. Desenvolvido com TypeScript, React, MUI no frontend e Node.js com PostgreSQL no backend, o Financias oferece uma interface intuitiva, permitindo aos usuários monitorar suas finanças de forma eficiente e segura."
+              data-repo="https://github.com/GabrielFrois/controle-financeiro" data-link-label="Ver Repositório"
+              data-images='["./src/img/financeiro-um.png","./src/img/financeiro-dois.png","./src/img/financeiro-tres.png","./src/img/financeiro-quatro.png","./src/img/financeiro-cinco.png"]'
+              data-badges='[{"label":"TypeScript","class":"badge-ts"},{"label":"React","class":"badge-react"},{"label":"MUI","class":"badge-mui"},{"label":"Node.js","class":"badge-node"},{"label":"PostgreSQL","class":"badge-sql"}]'>
+              <div class="project-card-img-wrap">
+                <img src="./src/img/financeiro-um.png" alt="Controle Financeiro" class="project-card-img" loading="lazy" />
+                <div class="project-card-overlay"><span>Ver detalhes</span></div>
+                <div class="project-card-info">
+                  <span class="project-year">2025</span>
+                  <h4>Controle Financeiro</h4>
+                  <div class="project-badges">
+                    <span class="badge badge-ts">TypeScript</span>
+                    <span class="badge badge-react">React</span>
+                    <span class="badge badge-mui">MUI</span>
+                    <span class="badge badge-sql">PostgreSQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal" data-category="personal" data-year="2026" data-title="Retro Burguer"
+              data-description="Uma Landing Page completa e responsiva desenvolvida para uma hamburgueria artesanal fictícia. O projeto foca em design moderno, navegação intuitiva e conversão de clientes através de links diretos para WhatsApp e Maps. Utilizando HTML, CSS e JavaScript, a página apresenta o cardápio, promoções e informações de contato de forma atraente e funcional."
+              data-repo="https://github.com/GabrielFrois/retro-burguer" data-link-label="Ver Repositório"
+              data-images='["./src/img/retro-burguer-um.png","./src/img/retro-burguer-dois.png","./src/img/retro-burguer-tres.png"]'
+              data-badges='[{"label":"HTML","class":"badge-html"},{"label":"CSS","class":"badge-css"},{"label":"JavaScript","class":"badge-js"}]'>
+              <div class="project-card-img-wrap">
+                <img src="./src/img/retro-burguer-um.png" alt="Retro Burguer" class="project-card-img" loading="lazy" />
+                <div class="project-card-overlay"><span>Ver detalhes</span></div>
+                <div class="project-card-info">
+                  <span class="project-year">2026</span>
+                  <h4>Retro Burguer</h4>
+                  <div class="project-badges">
+                    <span class="badge badge-html">HTML</span>
+                    <span class="badge badge-css">CSS</span>
+                    <span class="badge badge-js">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal" data-category="personal" data-year="2026" data-title="English Connect"
+              data-description="Uma Landing Page completa e responsiva desenvolvida para um professor de inglês ou escola de idiomas fictícia. O projeto foca em design profissional, apresentação clara da metodologia de ensino e conversão de alunos através de agendamento direto pelo WhatsApp. Utilizando HTML, CSS e JavaScript, a página apresenta os cursos oferecidos e informações de contato de forma atraente e funcional."
+              data-repo="https://github.com/GabrielFrois/english-connect" data-link-label="Ver Repositório"
+              data-images='["./src/img/english-connect-um.png","./src/img/english-connect-dois.png","./src/img/english-connect-tres.png"]'
+              data-badges='[{"label":"HTML","class":"badge-html"},{"label":"CSS","class":"badge-css"},{"label":"JavaScript","class":"badge-js"}]'>
+              <div class="project-card-img-wrap">
+                <img src="./src/img/english-connect-um.png" alt="English Connect" class="project-card-img" loading="lazy" />
+                <div class="project-card-overlay"><span>Ver detalhes</span></div>
+                <div class="project-card-info">
+                  <span class="project-year">2026</span>
+                  <h4>English Connect</h4>
+                  <div class="project-badges">
+                    <span class="badge badge-html">HTML</span>
+                    <span class="badge badge-css">CSS</span>
+                    <span class="badge badge-js">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal" data-category="personal" data-year="2026" data-title="Nexus Hardware"
+              data-description="Uma Landing Page moderna e responsiva com tema Dark/Gamer, desenvolvida para uma loja de manutenção de computadores, montagem de setups e venda de hardware. O projeto foca em identidade visual tecnológica e conversão de clientes através de consultoria direta pelo WhatsApp. Utilizando HTML, CSS e JavaScript, a página apresenta os serviços oferecidos e informações de contato de forma atraente e funcional."
+              data-repo="https://github.com/GabrielFrois/nexus-hardware" data-link-label="Ver Repositório"
+              data-images='["./src/img/nexus-um.png","./src/img/nexus-dois.png","./src/img/nexus-tres.png"]'
+              data-badges='[{"label":"HTML","class":"badge-html"},{"label":"CSS","class":"badge-css"},{"label":"JavaScript","class":"badge-js"}]'>
+              <div class="project-card-img-wrap">
+                <img src="./src/img/nexus-um.png" alt="Nexus Hardware" class="project-card-img" loading="lazy" />
+                <div class="project-card-overlay"><span>Ver detalhes</span></div>
+                <div class="project-card-info">
+                  <span class="project-year">2026</span>
+                  <h4>Nexus Hardware</h4>
+                  <div class="project-badges">
+                    <span class="badge badge-html">HTML</span>
+                    <span class="badge badge-css">CSS</span>
+                    <span class="badge badge-js">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal" data-category="personal" data-year="2026" data-title="Logo Ali"
+              data-live="true"
+              data-description="Uma plataforma interativa projetada para entusiastas de viagens. O projeto integra postagens dinâmicas, galeria de fotos e mapeamento de destinos, focando em uma experiência de navegação imersiva e responsiva. (Nota: O conteúdo é ilustrativo, criado para demonstração das funcionalidades da aplicação)."
+              data-repo="https://logo-ali.vercel.app/" data-link-label="Ver Projeto"
+              data-images='["./src/img/logo-ali-um.png","./src/img/logo-ali-dois.png","./src/img/logo-ali-tres.png","./src/img/logo-ali-quatro.png","./src/img/logo-ali-cinco.png","./src/img/logo-ali-seis.png"]'
+              data-badges='[{"label":"TypeScript","class":"badge-ts"},{"label":"Next.js","class":"badge-next"},{"label":"Tailwind CSS","class":"badge-tailwind"}]'>
+              <div class="project-card-img-wrap">
+                <img src="./src/img/logo-ali-um.png" alt="Logo Ali" class="project-card-img" loading="lazy" />
+                <div class="project-card-overlay"><span>Ver detalhes</span></div>
+                <div class="project-card-info">
+                  <span class="project-year">2026</span>
+                  <h4>Logo Ali</h4>
+                  <span class="project-live-badge">🟢 Ao vivo</span>
+                  <div class="project-badges">
+                    <span class="badge badge-ts">TypeScript</span>
+                    <span class="badge badge-next">Next.js</span>
+                    <span class="badge badge-tailwind">Tailwind CSS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Modal de Projeto -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="projectModalLabel"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div id="projectInnerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="projectInnerCarouselInner"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectInnerCarousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectInnerCarousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+          <div class="carousel-indicators-custom" id="projectInnerIndicators"></div>
+          <div id="projectModalBadges" class="mb-3 text-center mt-4"></div>
+          <p id="projectModalDescription" class="modal-description"></p>
+          <div class="text-center mt-4">
+            <a id="projectModalRepo" href="#" target="_blank" class="btn btn-outline-teal"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="main-title reveal">Contato</h2>
+          </div>
+          <div class="col-md-4 reveal">
+            <script>
+              var usuario = "frois.ga";
+              var dominio = "gmail.com";
+              document.write('<a class="contact-btn" href="mailto:' + usuario + '@' + dominio + '" target="_blank">');
+              document.write('<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Ícone de e-mail" />');
+              document.write('<p>' + usuario + '@' + dominio + '</p>');
+              document.write('</a>');
+            </script>
+          </div>
+          <div class="col-md-4 reveal">
+            <a class="contact-btn" href="https://www.linkedin.com/in/gabriel-frois/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="Ícone do LinkedIn" />
+              <p>Gabriel R. Frois de Oliveira</p>
+            </a>
+          </div>
+          <div class="col-md-4 reveal">
+            <a class="contact-btn" href="https://github.com/GabrielFrois" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Ícone do GitHub" />
+              <p>@GabrielFrois</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <p>© 2026 Gabriel Frois</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <span id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Imagem ampliada" />
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="src/js/scripts.js"></script>
 </body>
+
 </html>
