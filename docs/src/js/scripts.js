@@ -1,7 +1,7 @@
 // ========================
 // Typed text animation
 // ========================
-const phrases = ["Hello, world!"];
+const phrases = ["Hello world, I'm"];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -70,6 +70,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const repoBtn = document.getElementById("projectModalRepo");
       repoBtn.href = repo;
       repoBtn.textContent = linkLabel;
+
+      const liveBtn = document.getElementById("projectModalLive");
+      const liveUrl = card.dataset.liveUrl;
+      if (liveUrl) {
+        liveBtn.href = liveUrl;
+        liveBtn.style.display = "";
+      } else {
+        liveBtn.style.display = "none";
+      }
 
       const badgesEl = document.getElementById("projectModalBadges");
       badgesEl.innerHTML = badges
