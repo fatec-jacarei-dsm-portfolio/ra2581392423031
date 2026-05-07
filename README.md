@@ -4,5 +4,5 @@
 ### Turma: 4o Semestre de 2024
 --- 
 ### Portfólio Online 
-🔗 [Acesse o Portfólio](https://gabrielfrois.github.io)  
+🔗 [Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423031/)  
  🎤 [Pitch de Apresentação (vídeo)](https://youtu.be/04Az69mBuYo?si=jSSeyWlHDma2fPON)
