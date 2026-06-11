@@ -164,6 +164,18 @@
         <div class="about-section reveal">
           <h3 class="about-section-title"><span class="about-section-icon">📜</span> Certificados</h3>
           <div class="certs-grid">
+            <a class="cert-card" href="https://www.credly.com/badges/ac2263ad-a771-487a-a304-7c77fe165863/linked_in_profile" target="_blank">
+              <span class="cert-title">Implement Load Balancing on Compute Engine</span>
+              <span class="cert-issuer">Google</span>
+              <span class="cert-date">Jun 2026</span>
+            </a>
+            
+            <a class="cert-card" href="https://www.credly.com/badges/9a1f916a-1687-4329-8e26-f97c53e17164/linked_in_profile" target="_blank">
+              <span class="cert-title">Prepare Data for ML APIs on Google Cloud</span>
+              <span class="cert-issuer">Google</span>
+              <span class="cert-date">Maio 2026</span>
+            </a>
+
             <a class="cert-card" href="https://www.coursera.org/account/accomplishments/records/CT8Q0E5WV6VW" target="_blank">
               <span class="cert-title">Foundations of Cybersecurity</span>
               <span class="cert-issuer">Google</span>
@@ -288,6 +300,31 @@
         <div class="projects-group" id="group-academic">
           <h3 class="sub-title reveal">Acadêmicos <span class="projects-count" id="count-academic"></span></h3>
           <div class="projects-grid">
+
+            <div class="project-card reveal" data-category="academic" data-year="2026" data-title="Salus"
+              data-description="O Salus é um sistema inteligente focado em reduzir erros na administração de medicamentos e facilitar o monitoramento remoto por familiares. A solução integra um dispensador físico IoT (ESP32 comunicando via MQTT) a uma API REST e um aplicativo móvel. Neste projeto, atuei como Desenvolvedor Mobile, liderando a construção do aplicativo em React Native (Expo). Minhas principais responsabilidades incluíram a arquitetura do app, a criação do sistema de navegação entre os perfis de cuidador e dependente, a implementação do fluxo de autenticação persistente com AsyncStorage e o desenvolvimento das interfaces com integração direta à API utilizando Axios."
+              data-repo="https://github.com/Capydev-jac/Projeto-Salus"
+              data-images='["./src/img/salus-um.png","./src/img/salus-dois.png"]'
+              data-badges='[{"label":"TypeScript","class":"badge-ts"},{"label":"React Native","class":"badge-react"},{"label":"Expo","class":"badge-expo"},{"label":"Node.js","class":"badge-node"},{"label":"PostgreSQL","class":"badge-sql"},{"label": "MQTT","class": "badge-mqtt"},{"label": "Docker","class": "badge-docker"},{"label": "ESP32","class": "badge-esp"}]'>
+              <div class="project-card-img-wrap">
+                <img src="./src/img/salus-um.png" alt="Salus" class="project-card-img" loading="lazy" />
+                <div class="project-card-overlay"><span>Ver detalhes</span></div>
+                <div class="project-card-info">
+                  <span class="project-year">2026</span>
+                  <h4>Salus</h4>
+                  <div class="project-badges">
+                    <span class="badge badge-ts">TypeScript</span>
+                    <span class="badge badge-react">React Native</span>
+                    <span class="badge badge-expo">Expo</span>
+                    <span class="badge badge-node">Node.js</span>
+                    <span class="badge badge-sql">PostgreSQL</span>
+                    <span class="badge badge-mqtt">MQTT</span>
+                    <span class="badge badge-docker">Docker</span>
+                    <span class="badge badge-esp">ESP32</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="project-card reveal" data-category="academic" data-year="2025" data-title="Aetheris"
               data-description="O projeto Aetheris é uma aplicação web desenvolvida para centralizar a visualização e comparação de dados geoespaciais do Brazil Data Cube (INPE). A plataforma permite que usuários selecionem áreas no mapa para consultar metadados e comparar visualmente séries temporais de variáveis como NDVI e temperatura de diferentes satélites. Neste projeto, desenvolvido no 3º semestre de Desenvolvimento de Software Multiplataforma na Fatec, atuei como Scrum Master. Além de trabalhar ativamente no desenvolvimento do frontend, fui responsável pela gestão ágil do projeto, monitorando o progresso das sprints para garantir a entrega de um produto funcional."
@@ -580,26 +617,20 @@
     <div id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-12">
             <h2 class="main-title reveal">Contato</h2>
           </div>
-          <div class="col-md-4 reveal">
-            <script>
-              var usuario = "frois.ga";
-              var dominio = "gmail.com";
-              document.write('<a class="contact-btn" href="mailto:' + usuario + '@' + dominio + '" target="_blank">');
-              document.write('<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Ícone de e-mail" />');
-              document.write('<p>' + usuario + '@' + dominio + '</p>');
-              document.write('</a>');
-            </script>
-          </div>
-          <div class="col-md-4 reveal">
+        </div>
+        
+        <!-- Linha centralizada com espaçamento controlado -->
+        <div class="row justify-content-center g-4 reveal">
+          <div class="col-12 col-sm-5 col-md-4 col-lg-3">
             <a class="contact-btn" href="https://www.linkedin.com/in/gabriel-frois/" target="_blank">
               <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="Ícone do LinkedIn" />
               <p>Gabriel R. Frois de Oliveira</p>
             </a>
           </div>
-          <div class="col-md-4 reveal">
+          <div class="col-12 col-sm-5 col-md-4 col-lg-3">
             <a class="contact-btn" href="https://github.com/GabrielFrois" target="_blank">
               <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Ícone do GitHub" />
               <p>@GabrielFrois</p>

@@ -755,6 +755,9 @@ header {
 .badge-next      { background-color: #000000; color: #fff; }
 .badge-tailwind  { background-color: #06B6D4; color: #000; }
 .badge-expo      { background-color: #4630EB; color: #fff; }
+.badge-mqtt      { background-color: #660066; color: #fff; }
+.badge-docker    { background-color: #2496ED; color: #fff; }
+.badge-esp  { background-color: #00979D; color: #000; }
 
 /* ========================
    Botão outline teal
@@ -898,20 +901,26 @@ header {
 }
 
 #contact .contact-btn {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  text-decoration: none;
   transition: transform 0.2s ease-out;
+  width: 100%;
 }
 
 #contact img {
-  height: 5vh;
+  height: 40px;
   width: auto;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   margin-top: 10px;
 }
 
 #contact p {
-  font-size: 18px;
+  font-size: 16px;
+  margin: 0;
+  word-break: break-word; /* Evita que nomes longos quebrem o layout */
 }
 
 #contact a {
@@ -1092,20 +1101,15 @@ header {
   #contact .container { padding-top: 0; }
   #contact p { display: none; }
 
-  #contact .row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  #contact .col-md-4 {
-    width: auto !important;
-    flex: 0 0 auto;
+  /* Centralização garantida e espaçamento uniforme no mobile */
+  #contact .d-flex {
+    gap: 30px !important; 
   }
 
   #contact img {
     height: 6vh;
     width: auto;
+    margin-top: 0;
   }
 
   #contact .main-title {
