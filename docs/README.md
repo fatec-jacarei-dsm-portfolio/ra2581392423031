@@ -2,7 +2,7 @@
 Este repositório abriga meu portfólio pessoal, desenvolvido com foco em apresentar meus projetos, habilidades e experiências na área de desenvolvimento web e tecnologia.
 
 ## Acesse
-Você pode acessar o site [gabrielfrois.github.io/dev](https://gabrielfrois.github.io)
+Você pode acessar o site [aqui].(https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423031/)
 
 ## Tecnologias Utilizadas
 - HTML5
